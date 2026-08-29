@@ -1,0 +1,3391 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BUY PROPERTY WITH JANVI | Premium Real Estate</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --navy:#0b1f33;
+    --navy2:#122b44;
+    --gold:#c8a45d;
+    --gold-light:#e5cc91;
+    --cream:#f8f6f1;
+    --white:#fff;
+    --text:#243242;
+    --muted:#6d7884;
+    --border:#e5e1d8;
+    --green:#21845a;
+    --red:#c84b4b;
+    --shadow:0 15px 45px rgba(11,31,51,.09);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Inter",sans-serif;
+    background:var(--cream);
+    color:var(--text);
+}
+
+button,input,select,textarea{
+    font-family:inherit;
+}
+
+button{
+    cursor:pointer;
+}
+
+a{
+    text-decoration:none;
+}
+
+.page{
+    display:none;
+    min-height:calc(100vh - 82px);
+}
+
+.page.active{
+    display:block;
+}
+
+.container{
+    width:min(1180px,90%);
+    margin:auto;
+}
+
+.section{
+    padding:90px 0;
+}
+
+.eyebrow{
+    color:var(--gold);
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-size:11px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-heading h2{
+    font-family:"Playfair Display",serif;
+    color:var(--navy);
+    font-size:42px;
+}
+
+.section-heading p{
+    color:var(--muted);
+    font-size:14px;
+    max-width:650px;
+    margin:12px auto;
+}
+
+.btn{
+    border:0;
+    padding:13px 21px;
+    border-radius:8px;
+    font-weight:600;
+    font-size:13px;
+    transition:.25s;
+}
+
+.btn-primary{
+    background:var(--gold);
+    color:var(--navy);
+}
+
+.btn-primary:hover{
+    background:var(--gold-light);
+    transform:translateY(-2px);
+}
+
+.btn-dark{
+    background:var(--navy);
+    color:white;
+}
+
+.btn-dark:hover{
+    background:var(--navy2);
+}
+
+.btn-outline{
+    background:transparent;
+    border:1px solid var(--gold);
+    color:var(--gold);
+}
+
+.btn-outline:hover{
+    background:var(--gold);
+    color:var(--navy);
+}
+
+/* HEADER */
+
+.header{
+    height:82px;
+    background:rgba(11,31,51,.98);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 6%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 25px rgba(0,0,0,.12);
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    cursor:pointer;
+}
+
+.logo{
+    width:48px;
+    height:48px;
+    border:1.5px solid var(--gold);
+    border-radius:13px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    background:linear-gradient(145deg,#17324d,#091827);
+}
+
+.logo-house{
+    width:24px;
+    height:19px;
+    background:var(--gold);
+    position:relative;
+    clip-path:polygon(50% 0,100% 42%,88% 42%,88% 100%,12% 100%,12% 42%,0 42%);
+}
+
+.logo-door{
+    position:absolute;
+    width:6px;
+    height:10px;
+    background:var(--navy);
+    bottom:5px;
+    left:9px;
+}
+
+.brand-title{
+    font-family:"Playfair Display",serif;
+    font-size:18px;
+}
+
+.brand-subtitle{
+    display:block;
+    font-size:9px;
+    color:var(--gold-light);
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.nav{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.nav-link{
+    color:#e9eef3;
+    font-size:13px;
+    cursor:pointer;
+}
+
+.nav-link:hover{
+    color:var(--gold-light);
+}
+
+.nav-login{
+    padding:10px 17px;
+    border:1px solid rgba(229,204,145,.5);
+    border-radius:8px;
+}
+
+.menu-btn{
+    display:none;
+    background:none;
+    border:0;
+    color:white;
+    font-size:25px;
+}
+
+/* HERO */
+
+.hero{
+    min-height:680px;
+    display:flex;
+    align-items:center;
+    color:white;
+    background:
+    linear-gradient(90deg,rgba(7,22,37,.92),rgba(7,22,37,.56),rgba(7,22,37,.3)),
+    url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=90")
+    center/cover;
+}
+
+.hero-content{
+    width:min(1180px,90%);
+    margin:auto;
+}
+
+.hero-text{
+    max-width:720px;
+}
+
+.hero .eyebrow{
+    color:var(--gold-light);
+}
+
+.hero h1{
+    font-family:"Playfair Display",serif;
+    font-size:65px;
+    line-height:1.08;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:var(--gold-light);
+}
+
+.hero p{
+    max-width:600px;
+    font-size:17px;
+    color:#e9eef3;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+/* SEARCH */
+
+.search-wrap{
+    margin-top:-58px;
+    position:relative;
+    z-index:20;
+}
+
+.search-panel{
+    background:white;
+    border-radius:16px;
+    padding:26px;
+    box-shadow:var(--shadow);
+    border:1px solid var(--border);
+}
+
+.search-title{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:18px;
+}
+
+.search-title h3{
+    font-family:"Playfair Display",serif;
+    font-size:22px;
+    color:var(--navy);
+}
+
+.search-title span{
+    font-size:12px;
+    color:var(--muted);
+}
+
+.search-grid{
+    display:grid;
+    grid-template-columns:1fr 1.2fr 1fr auto;
+    gap:12px;
+}
+
+input,select,textarea{
+    width:100%;
+    border:1px solid var(--border);
+    background:#fff;
+    color:var(--text);
+    padding:12px 13px;
+    border-radius:8px;
+    outline:none;
+    font-size:13px;
+}
+
+input:focus,select:focus,textarea:focus{
+    border-color:var(--gold);
+    box-shadow:0 0 0 3px rgba(200,164,93,.12);
+}
+
+/* PROPERTY CARDS */
+
+.property-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+.property-card{
+    background:white;
+    border:1px solid var(--border);
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 8px 30px rgba(11,31,51,.06);
+    transition:.3s;
+}
+
+.property-card:hover{
+    transform:translateY(-7px);
+    box-shadow:var(--shadow);
+}
+
+.property-image{
+    height:230px;
+    position:relative;
+    overflow:hidden;
+}
+
+.property-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.property-card:hover .property-image img{
+    transform:scale(1.04);
+}
+
+.property-badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+}
+
+.badge{
+    display:inline-block;
+    padding:5px 9px;
+    border-radius:20px;
+    font-size:10px;
+    font-weight:700;
+    background:var(--gold);
+    color:var(--navy);
+}
+
+.property-save{
+    position:absolute;
+    right:15px;
+    top:15px;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    background:white;
+    border:0;
+    color:var(--navy);
+    box-shadow:0 3px 12px #0002;
+}
+
+.property-body{
+    padding:22px;
+}
+
+.property-type{
+    color:var(--gold);
+    font-size:10px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+}
+
+.property-title{
+    font-family:"Playfair Display",serif;
+    font-size:21px;
+    color:var(--navy);
+    margin:6px 0;
+}
+
+.property-location{
+    font-size:12px;
+    color:var(--muted);
+    margin-bottom:14px;
+}
+
+.property-price{
+    font-size:21px;
+    color:var(--navy);
+    font-weight:700;
+}
+
+.property-rate{
+    color:var(--green);
+    font-size:12px;
+    font-weight:600;
+}
+
+.property-meta{
+    display:flex;
+    gap:14px;
+    padding:14px 0;
+    margin:14px 0;
+    border-top:1px solid var(--border);
+    border-bottom:1px solid var(--border);
+    color:var(--muted);
+    font-size:11px;
+}
+
+.property-actions{
+    display:flex;
+    gap:8px;
+}
+
+.property-actions .btn{
+    flex:1;
+}
+
+/* FEATURES */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.feature-card{
+    background:white;
+    padding:32px 24px;
+    border:1px solid var(--border);
+    border-radius:14px;
+    text-align:center;
+    transition:.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-5px);
+    box-shadow:var(--shadow);
+}
+
+.feature-icon{
+    width:62px;
+    height:62px;
+    margin:auto auto 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:#f5efe2;
+    font-size:27px;
+}
+
+.feature-card h3{
+    font-family:"Playfair Display",serif;
+    color:var(--navy);
+    margin-bottom:8px;
+}
+
+.feature-card p{
+    color:var(--muted);
+    font-size:12px;
+}
+
+/* ABOUT */
+
+.about-section{
+    background:var(--navy);
+    color:white;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.about-image{
+    height:450px;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.about-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.about-content .eyebrow{
+    color:var(--gold-light);
+}
+
+.about-content h2{
+    font-family:"Playfair Display",serif;
+    font-size:43px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.about-content p{
+    color:#cbd5df;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+/* CONTACT */
+
+.contact-section{
+    background:#fff;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.contact-card{
+    background:#faf9f5;
+    border:1px solid var(--border);
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+}
+
+.contact-icon{
+    width:65px;
+    height:65px;
+    background:#f5efe2;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:27px;
+    margin:auto auto 18px;
+}
+
+.contact-card h3{
+    font-family:"Playfair Display",serif;
+    color:var(--navy);
+    margin-bottom:8px;
+}
+
+.contact-card p{
+    color:var(--muted);
+    font-size:13px;
+    margin-bottom:15px;
+}
+
+.contact-link{
+    color:var(--navy);
+    font-size:13px;
+    font-weight:700;
+    word-break:break-word;
+}
+
+/* AUTH */
+
+.auth-page{
+    min-height:calc(100vh - 82px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:60px 20px;
+    background:
+    linear-gradient(rgba(11,31,51,.82),rgba(11,31,51,.82)),
+    url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1800&q=90")
+    center/cover;
+}
+
+.auth-card{
+    width:min(430px,100%);
+    background:white;
+    border-radius:18px;
+    padding:38px;
+    box-shadow:0 20px 60px #0005;
+}
+
+.auth-logo{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.auth-logo .logo{
+    margin:auto;
+}
+
+.auth-card h2{
+    text-align:center;
+    font-family:"Playfair Display",serif;
+    font-size:30px;
+    color:var(--navy);
+}
+
+.auth-subtitle{
+    text-align:center;
+    color:var(--muted);
+    font-size:12px;
+    margin:5px 0 25px;
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+.form-label{
+    display:block;
+    font-size:11px;
+    font-weight:600;
+    color:var(--navy);
+    margin-bottom:6px;
+}
+
+.auth-card .btn{
+    width:100%;
+    margin-top:5px;
+}
+
+.auth-switch{
+    text-align:center;
+    margin-top:18px;
+    font-size:12px;
+    color:var(--muted);
+}
+
+.auth-switch span{
+    color:#a57e35;
+    font-weight:700;
+    cursor:pointer;
+}
+
+/* DETAIL */
+
+.detail-container{
+    width:min(1150px,90%);
+    margin:50px auto;
+}
+
+.detail-card{
+    background:white;
+    border:1px solid var(--border);
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+}
+
+.detail-hero{
+    height:470px;
+    position:relative;
+}
+
+.detail-hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.detail-overlay{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:35px;
+    color:white;
+    background:linear-gradient(transparent,rgba(0,0,0,.78));
+}
+
+.detail-overlay h1{
+    font-family:"Playfair Display",serif;
+    font-size:42px;
+}
+
+.detail-content{
+    padding:35px;
+}
+
+.detail-info-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:14px;
+    margin:25px 0;
+}
+
+.detail-info{
+    padding:18px;
+    background:#faf9f5;
+    border:1px solid var(--border);
+    border-radius:10px;
+}
+
+.detail-info small{
+    color:var(--muted);
+    font-size:10px;
+    text-transform:uppercase;
+}
+
+.detail-info strong{
+    display:block;
+    color:var(--navy);
+    font-size:19px;
+    margin-top:4px;
+}
+
+.detail-content h2{
+    font-family:"Playfair Display",serif;
+    color:var(--navy);
+    margin:30px 0 15px;
+}
+
+.location-photo{
+    width:100%;
+    height:330px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.map{
+    width:100%;
+    height:330px;
+    border:0;
+    border-radius:12px;
+}
+
+.contact-buttons{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+/* DASHBOARD */
+
+.dashboard{
+    display:grid;
+    grid-template-columns:245px 1fr;
+    min-height:calc(100vh - 82px);
+}
+
+.sidebar{
+    background:var(--navy);
+    color:white;
+    padding:25px 15px;
+}
+
+.sidebar-brand{
+    text-align:center;
+    padding-bottom:25px;
+    margin-bottom:15px;
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.sidebar-brand .logo{
+    margin:auto auto 10px;
+}
+
+.sidebar-brand h3{
+    font-family:"Playfair Display",serif;
+    color:var(--gold-light);
+}
+
+.sidebar-brand small{
+    font-size:9px;
+    color:#9eabb7;
+}
+
+.side-btn{
+    width:100%;
+    border:0;
+    background:transparent;
+    color:#d9e1e8;
+    padding:13px;
+    border-radius:8px;
+    text-align:left;
+    margin:3px 0;
+    font-size:12px;
+}
+
+.side-btn:hover,
+.side-btn.active{
+    background:var(--navy2);
+    color:var(--gold-light);
+}
+
+.side-logout{
+    margin-top:25px;
+    color:#ffb0b0;
+}
+
+.dashboard-main{
+    padding:40px;
+    background:#f5f4ef;
+}
+
+.dashboard-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.dashboard-header h1{
+    font-family:"Playfair Display",serif;
+    font-size:34px;
+    color:var(--navy);
+}
+
+.dashboard-header p{
+    color:var(--muted);
+    font-size:12px;
+}
+
+.user-chip{
+    background:white;
+    padding:10px 15px;
+    border-radius:30px;
+    border:1px solid var(--border);
+    font-size:12px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+    margin-bottom:25px;
+}
+
+.stat-card{
+    background:white;
+    border:1px solid var(--border);
+    padding:23px;
+    border-radius:13px;
+}
+
+.stat-card p{
+    color:var(--muted);
+    font-size:11px;
+}
+
+.stat-card h2{
+    color:var(--navy);
+    font-size:28px;
+}
+
+.dash-content{
+    display:none;
+}
+
+.dash-content.active{
+    display:block;
+}
+
+.dashboard-box{
+    background:white;
+    border:1px solid var(--border);
+    border-radius:13px;
+    padding:25px;
+    margin-bottom:20px;
+}
+
+.dashboard-box h2{
+    font-family:"Playfair Display",serif;
+    color:var(--navy);
+    margin-bottom:20px;
+}
+
+.table-wrap{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:650px;
+}
+
+th,td{
+    text-align:left;
+    padding:14px;
+    border-bottom:1px solid var(--border);
+    font-size:11px;
+}
+
+th{
+    color:var(--navy);
+    background:#faf9f5;
+}
+
+td{
+    color:#566270;
+}
+
+.status{
+    display:inline-block;
+    padding:4px 9px;
+    border-radius:20px;
+    font-size:9px;
+    font-weight:700;
+}
+
+.status.available{
+    background:#e0f3e9;
+    color:var(--green);
+}
+
+.status.sold{
+    background:#fce5e5;
+    color:var(--red);
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.full{
+    grid-column:1/-1;
+}
+
+.form-group textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+.image-preview{
+    display:none;
+    margin-top:10px;
+}
+
+.image-preview img{
+    width:180px;
+    height:120px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#071827;
+    color:white;
+    padding:50px 0 25px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr;
+    gap:50px;
+    padding-bottom:35px;
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.footer-brand h2{
+    font-family:"Playfair Display",serif;
+    color:var(--gold-light);
+    margin-bottom:10px;
+}
+
+.footer-brand p,
+.footer p,
+.footer a{
+    color:#9ca9b5;
+    font-size:11px;
+    margin:8px 0;
+    display:block;
+}
+
+.footer h3{
+    font-size:13px;
+    margin-bottom:14px;
+}
+
+.footer-bottom{
+    padding-top:22px;
+    display:flex;
+    justify-content:space-between;
+    color:#71808d;
+    font-size:10px;
+}
+
+.created{
+    color:var(--gold-light);
+    font-weight:600;
+}
+
+/* TOAST */
+
+.toast{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    background:var(--navy);
+    color:white;
+    padding:14px 18px;
+    border-radius:9px;
+    box-shadow:0 10px 30px #0003;
+    font-size:12px;
+    transform:translateY(100px);
+    opacity:0;
+    transition:.3s;
+    z-index:5000;
+}
+
+.toast.show{
+    transform:translateY(0);
+    opacity:1;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+    .hero h1{
+        font-size:52px;
+    }
+
+    .property-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .features{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .search-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .detail-info-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:750px){
+
+    .header{
+        height:72px;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .nav{
+        display:none;
+        position:absolute;
+        top:72px;
+        left:0;
+        right:0;
+        background:var(--navy);
+        flex-direction:column;
+        padding:20px;
+        gap:15px;
+    }
+
+    .nav.open{
+        display:flex;
+    }
+
+    .brand-title{
+        font-size:14px;
+    }
+
+    .brand-subtitle{
+        font-size:7px;
+    }
+
+    .hero{
+        min-height:590px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .section{
+        padding:65px 0;
+    }
+
+    .section-heading h2{
+        font-size:34px;
+    }
+
+    .property-grid,
+    .features,
+    .about-grid,
+    .footer-grid,
+    .stats,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .search-grid{
+        grid-template-columns:1fr;
+    }
+
+    .search-title{
+        flex-direction:column;
+        gap:4px;
+    }
+
+    .about-image{
+        height:320px;
+    }
+
+    .dashboard{
+        grid-template-columns:1fr;
+    }
+
+    .sidebar{
+        display:none;
+    }
+
+    .dashboard-main{
+        padding:25px 15px;
+    }
+
+    .dashboard-header{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .full{
+        grid-column:auto;
+    }
+
+    .detail-hero{
+        height:320px;
+    }
+
+    .detail-overlay h1{
+        font-size:30px;
+    }
+
+    .detail-content{
+        padding:22px;
+    }
+
+    .detail-info-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        gap:8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+
+    <div class="brand" onclick="showPage('home')">
+
+        <div class="logo">
+            <div class="logo-house"></div>
+            <div class="logo-door"></div>
+        </div>
+
+        <div>
+            <div class="brand-title">BUY PROPERTY WITH JANVI</div>
+            <span class="brand-subtitle">
+                Real Estate • Trusted Guidance
+            </span>
+        </div>
+
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav class="nav" id="mainNav">
+
+        <a class="nav-link" onclick="showPage('home')">
+            Home
+        </a>
+
+        <a class="nav-link" onclick="showPage('properties')">
+            Properties
+        </a>
+
+        <a class="nav-link" onclick="showPage('about')">
+            About
+        </a>
+
+        <a class="nav-link" onclick="showPage('contact')">
+            Contact
+        </a>
+
+        <a class="nav-link" onclick="showPage('dashboard')">
+            Dashboard
+        </a>
+
+        <a class="nav-link nav-login" onclick="showPage('login')">
+            Login
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- HOME -->
+<div id="home" class="page active">
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <div class="eyebrow">
+                Premium Property Consultancy
+            </div>
+
+            <h1>
+                Find a Place<br>
+                <span>You’ll Love.</span>
+            </h1>
+
+            <p>
+                Discover selected homes, plots and commercial
+                properties with transparent pricing, location
+                details and trusted assistance from Janvi.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="btn btn-primary"
+                        onclick="showPage('properties')">
+                    Explore Properties →
+                </button>
+
+                <button class="btn btn-outline"
+                        onclick="showPage('contact')">
+                    Contact Us
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SEARCH -->
+<div class="container search-wrap">
+
+    <div class="search-panel">
+
+        <div class="search-title">
+
+            <h3>Find Your Property</h3>
+
+            <span>
+                Search by type, location or budget
+            </span>
+
+        </div>
+
+        <div class="search-grid">
+
+            <select id="searchType">
+                <option value="">Property Type</option>
+                <option>House</option>
+                <option>Flat</option>
+                <option>Plot</option>
+                <option>Shop</option>
+                <option>Commercial</option>
+            </select>
+
+            <input
+                id="searchLocation"
+                placeholder="📍 Enter Location">
+
+            <select id="searchBudget">
+
+                <option value="">Budget</option>
+                <option>Below ₹20 Lakh</option>
+                <option>₹20 - ₹50 Lakh</option>
+                <option>₹50 Lakh - ₹1 Crore</option>
+                <option>Above ₹1 Crore</option>
+
+            </select>
+
+            <button class="btn btn-dark"
+                    onclick="searchProperty()">
+                Search
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- FEATURED -->
+<section class="section">
+
+<div class="container">
+
+    <div class="section-heading">
+
+        <div class="eyebrow">
+            Featured Listings
+        </div>
+
+        <h2>
+            Properties Worth Exploring
+        </h2>
+
+        <p>
+            Browse selected properties with clear pricing,
+            area information and location details.
+        </p>
+
+    </div>
+
+
+    <div class="property-grid">
+
+
+        <!-- PROPERTY 1 -->
+        <div class="property-card">
+
+            <div class="property-image">
+
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=90">
+
+                <span class="badge property-badge">
+                    FEATURED
+                </span>
+
+                <button class="property-save"
+                        onclick="saveProperty(this)">
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="property-body">
+
+                <div class="property-type">
+                    Residential House
+                </div>
+
+                <div class="property-title">
+                    Premium Family House
+                </div>
+
+                <div class="property-location">
+                    📍 Shikohabad, Uttar Pradesh
+                </div>
+
+                <div class="property-price">
+                    ₹75 Lakh
+                </div>
+
+                <div class="property-rate">
+                    ₹4,166 / Sq.Ft.
+                </div>
+
+                <div class="property-meta">
+                    <span>🛏 3 BHK</span>
+                    <span>📐 1800 Sq.Ft.</span>
+                </div>
+
+                <div class="property-actions">
+
+                    <button class="btn btn-primary"
+                            onclick="openProperty(1)">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROPERTY 2 -->
+        <div class="property-card">
+
+            <div class="property-image">
+
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=90">
+
+                <span class="badge property-badge">
+                    POPULAR
+                </span>
+
+                <button class="property-save"
+                        onclick="saveProperty(this)">
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="property-body">
+
+                <div class="property-type">
+                    Apartment
+                </div>
+
+                <div class="property-title">
+                    Luxury Apartment
+                </div>
+
+                <div class="property-location">
+                    📍 Firozabad, Uttar Pradesh
+                </div>
+
+                <div class="property-price">
+                    ₹48 Lakh
+                </div>
+
+                <div class="property-rate">
+                    ₹4,000 / Sq.Ft.
+                </div>
+
+                <div class="property-meta">
+                    <span>🛏 2 BHK</span>
+                    <span>📐 1200 Sq.Ft.</span>
+                </div>
+
+                <button class="btn btn-primary"
+                        onclick="openProperty(2)">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROPERTY 3 -->
+        <div class="property-card">
+
+            <div class="property-image">
+
+                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1000&q=90">
+
+                <span class="badge property-badge">
+                    NEW
+                </span>
+
+                <button class="property-save"
+                        onclick="saveProperty(this)">
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="property-body">
+
+                <div class="property-type">
+                    Residential Plot
+                </div>
+
+                <div class="property-title">
+                    Main Road Residential Plot
+                </div>
+
+                <div class="property-location">
+                    📍 Main Road, Shikohabad
+                </div>
+
+                <div class="property-price">
+                    ₹25 Lakh
+                </div>
+
+                <div class="property-rate">
+                    ₹1,666 / Sq.Ft.
+                </div>
+
+                <div class="property-meta">
+                    <span>📐 1500 Sq.Ft.</span>
+                    <span>🛣 Main Road</span>
+                </div>
+
+                <button class="btn btn-primary"
+                        onclick="openProperty(3)">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- FEATURES -->
+<section class="section" style="background:#fff;">
+
+<div class="container">
+
+    <div class="section-heading">
+
+        <div class="eyebrow">
+            Why Janvi
+        </div>
+
+        <h2>
+            A Better Way to Find Property
+        </h2>
+
+    </div>
+
+    <div class="features">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">📍</div>
+
+            <h3>Exact Location</h3>
+
+            <p>
+                Get property location information
+                and nearby area details.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">₹</div>
+
+            <h3>Rate Per Sq.Ft.</h3>
+
+            <p>
+                Easily understand property value
+                with per square feet pricing.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">📸</div>
+
+            <h3>Location Photos</h3>
+
+            <p>
+                View property and surrounding
+                location photographs.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">🗺️</div>
+
+            <h3>Map Guidance</h3>
+
+            <p>
+                Open the map location and understand
+                the property's surroundings.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="section about-section">
+
+<div class="container about-grid">
+
+    <div class="about-image">
+
+        <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=90">
+
+    </div>
+
+    <div class="about-content">
+
+        <div class="eyebrow">
+            About Our Business
+        </div>
+
+        <h2>
+            Property decisions should feel simple.
+        </h2>
+
+        <p>
+            BUY PROPERTY WITH JANVI is focused on helping
+            customers discover residential and commercial
+            property options with useful information about
+            pricing, area, location and surroundings.
+        </p>
+
+        <p>
+            Our aim is to make the property-search experience
+            straightforward, professional and convenient.
+        </p>
+
+        <button class="btn btn-primary"
+                onclick="showPage('properties')">
+            Explore Listings
+        </button>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="homeContact" class="section contact-section">
+
+<div class="container">
+
+    <div class="section-heading">
+
+        <div class="eyebrow">
+            Get In Touch
+        </div>
+
+        <h2>
+            Contact BUY PROPERTY WITH JANVI
+        </h2>
+
+        <p>
+            Have a question about a property?
+            Contact us directly.
+        </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+
+            <div class="contact-icon">📞</div>
+
+            <h3>Call Us</h3>
+
+            <p>
+                Speak directly with us about
+                available properties.
+            </p>
+
+            <a class="contact-link"
+               href="tel:8533034709">
+                8533034709
+            </a>
+
+            <br>
+
+            <a class="btn btn-primary"
+               href="tel:8533034709">
+                Call Now
+            </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">✉️</div>
+
+            <h3>Email Us</h3>
+
+            <p>
+                Send your property requirement
+                or enquiry by email.
+            </p>
+
+            <a class="contact-link"
+               href="mailto:abhaypratap112@gmail.com">
+                abhaypratap112@gmail.com
+            </a>
+
+            <br><br>
+
+            <a class="btn btn-primary"
+               href="mailto:abhaypratap112@gmail.com">
+                Email Us
+            </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">📍</div>
+
+            <h3>Location</h3>
+
+            <p>
+                Property services around
+                Shikohabad and nearby areas.
+            </p>
+
+            <span class="contact-link">
+                Shikohabad, Uttar Pradesh
+            </span>
+
+            <br><br>
+
+            <button class="btn btn-primary"
+                    onclick="openMap()">
+                Open Map
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+<div class="container">
+
+    <div class="footer-grid">
+
+        <div class="footer-brand">
+
+            <h2>
+                BUY PROPERTY WITH JANVI
+            </h2>
+
+            <p>
+                Premium property discovery and
+                trusted guidance for your next
+                real-estate decision.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a onclick="showPage('home')">
+                Home
+            </a>
+
+            <a onclick="showPage('properties')">
+                Properties
+            </a>
+
+            <a onclick="showPage('about')">
+                About
+            </a>
+
+            <a onclick="showPage('contact')">
+                Contact
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <a href="tel:8533034709">
+                📞 8533034709
+            </a>
+
+            <a href="mailto:abhaypratap112@gmail.com">
+                ✉️ abhaypratap112@gmail.com
+            </a>
+
+            <p>
+                📍 Shikohabad, Uttar Pradesh
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 BUY PROPERTY WITH JANVI.
+            All Rights Reserved.
+        </span>
+
+        <span class="created">
+            Website Created by Abhay Pratap
+        </span>
+
+    </div>
+
+</div>
+
+</footer>
+
+</div>
+
+
+<!-- PROPERTIES PAGE -->
+<div id="properties" class="page">
+
+<section class="section">
+
+<div class="container">
+
+    <div class="section-heading">
+
+        <div class="eyebrow">
+            Our Listings
+        </div>
+
+        <h2>
+            Explore Properties
+        </h2>
+
+        <p>
+            Find houses, apartments, plots and
+            commercial properties.
+        </p>
+
+    </div>
+
+
+    <div class="property-grid" id="propertyList">
+
+        <!-- Property cards inserted by JavaScript -->
+
+    </div>
+
+</div>
+
+</section>
+
+</div>
+
+
+<!-- ABOUT PAGE -->
+<div id="about" class="page">
+
+<section class="section about-section">
+
+<div class="container about-grid">
+
+    <div class="about-image">
+
+        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=90">
+
+    </div>
+
+    <div class="about-content">
+
+        <div class="eyebrow">
+            BUY PROPERTY WITH JANVI
+        </div>
+
+        <h2>
+            Your property search,
+            made more confident.
+        </h2>
+
+        <p>
+            We help customers explore property options
+            with useful information such as location,
+            property area, total price and rate per
+            square feet.
+        </p>
+
+        <p>
+            Whether you are looking for a home, apartment,
+            residential plot or commercial property,
+            our goal is to make the process easier.
+        </p>
+
+        <button class="btn btn-primary"
+                onclick="showPage('properties')">
+            Browse Properties
+        </button>
+
+    </div>
+
+</div>
+
+</section>
+
+</div>
+
+
+<!-- CONTACT PAGE -->
+<div id="contact" class="page">
+
+<section class="section contact-section">
+
+<div class="container">
+
+    <div class="section-heading">
+
+        <div class="eyebrow">
+            Contact
+        </div>
+
+        <h2>
+            Let's Talk About Property
+        </h2>
+
+        <p>
+            Contact us for property information,
+            availability and enquiries.
+        </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+
+            <div class="contact-icon">📞</div>
+
+            <h3>Phone</h3>
+
+            <p>
+                Call us directly.
+            </p>
+
+            <a class="contact-link"
+               href="tel:8533034709">
+                8533034709
+            </a>
+
+            <br><br>
+
+            <a class="btn btn-primary"
+               href="tel:8533034709">
+                Call Now
+            </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">✉️</div>
+
+            <h3>Email</h3>
+
+            <p>
+                Send us your requirement.
+            </p>
+
+            <a class="contact-link"
+               href="mailto:abhaypratap112@gmail.com">
+                abhaypratap112@gmail.com
+            </a>
+
+            <br><br>
+
+            <a class="btn btn-primary"
+               href="mailto:abhaypratap112@gmail.com">
+                Email Now
+            </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">🗺️</div>
+
+            <h3>Location</h3>
+
+            <p>
+                Shikohabad, Uttar Pradesh
+            </p>
+
+            <button class="btn btn-primary"
+                    onclick="openMap()">
+                View Location
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+</div>
+
+
+<!-- PROPERTY DETAIL -->
+<div id="detail" class="page">
+
+<div class="detail-container">
+
+<div class="detail-card">
+
+    <div class="detail-hero">
+
+        <img id="detailImage">
+
+        <div class="detail-overlay">
+
+            <span class="badge" id="detailType">
+                PROPERTY
+            </span>
+
+            <h1 id="detailTitle">
+                Property
+            </h1>
+
+            <p id="detailLocation">
+                📍 Location
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="detail-content">
+
+        <div class="detail-info-grid">
+
+            <div class="detail-info">
+                <small>Total Price</small>
+                <strong id="detailPrice">₹0</strong>
+            </div>
+
+            <div class="detail-info">
+                <small>Rate / Sq.Ft.</small>
+                <strong id="detailRate">₹0</strong>
+            </div>
+
+            <div class="detail-info">
+                <small>Area</small>
+                <strong id="detailArea">0 Sq.Ft.</strong>
+            </div>
+
+            <div class="detail-info">
+                <small>Property Type</small>
+                <strong id="detailPropertyType">-</strong>
+            </div>
+
+        </div>
+
+
+        <h2>
+            About This Property
+        </h2>
+
+        <p id="detailDescription"
+           style="color:#6d7884;font-size:14px;">
+        </p>
+
+
+        <h2>
+            📸 Location Photo
+        </h2>
+
+        <img id="locationImage"
+             class="location-photo">
+
+
+        <h2>
+            🗺️ Property Location
+        </h2>
+
+        <iframe
+            id="propertyMap"
+            class="map"
+            loading="lazy">
+        </iframe>
+
+
+        <h2>
+            Interested in this property?
+        </h2>
+
+        <div class="contact-buttons">
+
+            <a href="tel:8533034709"
+               class="btn btn-primary">
+                📞 Call 8533034709
+            </a>
+
+            <a href="mailto:abhaypratap112@gmail.com"
+               class="btn btn-dark">
+                ✉️ Send Email
+            </a>
+
+            <button class="btn btn-outline"
+                    onclick="showPage('properties')">
+                ← Back to Properties
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- LOGIN -->
+<div id="login" class="page">
+
+<div class="auth-page">
+
+<div class="auth-card">
+
+    <div class="auth-logo">
+
+        <div class="logo">
+            <div class="logo-house"></div>
+            <div class="logo-door"></div>
+        </div>
+
+    </div>
+
+    <h2>Welcome Back</h2>
+
+    <div class="auth-subtitle">
+        Login to your property account
+    </div>
+
+
+    <div class="form-group">
+
+        <label class="form-label">
+            Email Address
+        </label>
+
+        <input id="loginEmail"
+               type="email"
+               placeholder="Enter your email">
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label class="form-label">
+            Password
+        </label>
+
+        <input id="loginPassword"
+               type="password"
+               placeholder="Enter your password">
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label class="form-label">
+            Account Type
+        </label>
+
+        <select id="loginRole">
+
+            <option value="customer">
+                Customer
+            </option>
+
+            <option value="admin">
+                Admin
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <button class="btn btn-primary"
+            onclick="login()">
+        Login
+    </button>
+
+
+    <div class="auth-switch">
+
+        Don't have an account?
+
+        <span onclick="showPage('register')">
+            Create Account
+        </span>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- REGISTER -->
+<div id="register" class="page">
+
+<div class="auth-page">
+
+<div class="auth-card">
+
+    <div class="auth-logo">
+
+        <div class="logo">
+            <div class="logo-house"></div>
+            <div class="logo-door"></div>
+        </div>
+
+    </div>
+
+    <h2>Create Account</h2>
+
+    <div class="auth-subtitle">
+        Join BUY PROPERTY WITH JANVI
+    </div>
+
+
+    <div class="form-group">
+
+        <label class="form-label">
+            Full Name
+        </label>
+
+        <input id="regName"
+               type="text"
+               placeholder="Enter your full name">
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label class="form-label">
+            Email Address
+        </label>
+
+        <input id="regEmail"
+               type="email"
+               placeholder="Enter your email">
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label class="form-label">
+            Mobile Number
+        </label>
+
+        <input id="regPhone"
+               type="tel"
+               placeholder="Enter mobile number">
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label class="form-label">
+            Password
+        </label>
+
+        <input id="regPassword"
+               type="password"
+               placeholder="Create a password">
+
+    </div>
+
+
+    <button class="btn btn-primary"
+            onclick="register()">
+        Create Account
+    </button>
+
+
+    <div class="auth-switch">
+
+        Already have an account?
+
+        <span onclick="showPage('login')">
+            Login
+        </span>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- DASHBOARD -->
+<div id="dashboard" class="page">
+
+<div class="dashboard">
+
+<aside class="sidebar">
+
+    <div class="sidebar-brand">
+
+        <div class="logo">
+
+            <div class="logo-house"></div>
+            <div class="logo-door"></div>
+
+        </div>
+
+        <h3>JANVI</h3>
+
+        <small>
+            PROPERTY DASHBOARD
+        </small>
+
+    </div>
+
+
+    <button class="side-btn active"
+            onclick="dashboardSection('overview',this)">
+        ◈ &nbsp; Overview
+    </button>
+
+    <button class="side-btn"
+            onclick="dashboardSection('manageProperties',this)">
+        ⌂ &nbsp; Properties
+    </button>
+
+    <button class="side-btn"
+            onclick="dashboardSection('addProperty',this)">
+        ＋ &nbsp; Add Property
+    </button>
+
+    <button class="side-btn"
+            onclick="dashboardSection('enquiries',this)">
+        ✉ &nbsp; Enquiries
+    </button>
+
+    <button class="side-btn"
+            onclick="showPage('home')">
+        ◉ &nbsp; Visit Website
+    </button>
+
+    <button class="side-btn side-logout"
+            onclick="logout()">
+        ↪ &nbsp; Logout
+    </button>
+
+</aside>
+
+
+<main class="dashboard-main">
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <h1>Dashboard</h1>
+
+            <p>
+                Manage your property listings and enquiries.
+            </p>
+
+        </div>
+
+        <div class="user-chip">
+            👤 <span id="dashboardUser">Janvi</span>
+        </div>
+
+    </div>
+
+
+    <!-- OVERVIEW -->
+    <div id="overview"
+         class="dash-content active">
+
+        <div class="stats">
+
+            <div class="stat-card">
+                <p>Total Properties</p>
+                <h2>24</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Available</p>
+                <h2>18</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Sold Properties</p>
+                <h2>06</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Enquiries</p>
+                <h2>42</h2>
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-box">
+
+            <h2>
+                Recent Enquiries
+            </h2>
+
+            <div class="table-wrap">
+
+            <table>
+
+                <tr>
+                    <th>Customer</th>
+                    <th>Property</th>
+                    <th>Phone</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>Rahul Kumar</td>
+                    <td>Premium Family House</td>
+                    <td>98XXXXXX12</td>
+                    <td>
+                        <span class="status available">
+                            New
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Priya Singh</td>
+                    <td>Luxury Apartment</td>
+                    <td>96XXXXXX78</td>
+                    <td>
+                        <span class="status available">
+                            New
+                        </span>
+                    </td>
+                </tr>
+
+            </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- MANAGE PROPERTIES -->
+    <div id="manageProperties"
+         class="dash-content">
+
+        <div class="dashboard-box">
+
+            <h2>
+                Property Listings
+            </h2>
+
+            <button class="btn btn-primary"
+                    onclick="dashboardSection('addProperty')">
+                + Add New Property
+            </button>
+
+            <br><br>
+
+            <div class="table-wrap">
+
+            <table>
+
+                <tr>
+                    <th>Property</th>
+                    <th>Location</th>
+                    <th>Area</th>
+                    <th>Rate / Sq.Ft.</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>Premium Family House</td>
+                    <td>Shikohabad</td>
+                    <td>1800 Sq.Ft.</td>
+                    <td>₹4,166</td>
+                    <td>₹75 Lakh</td>
+                    <td>
+                        <span class="status available">
+                            Available
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Luxury Apartment</td>
+                    <td>Firozabad</td>
+                    <td>1200 Sq.Ft.</td>
+                    <td>₹4,000</td>
+                    <td>₹48 Lakh</td>
+                    <td>
+                        <span class="status available">
+                            Available
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Residential Plot</td>
+                    <td>Shikohabad</td>
+                    <td>1500 Sq.Ft.</td>
+                    <td>₹1,666</td>
+                    <td>₹25 Lakh</td>
+                    <td>
+                        <span class="status available">
+                            Available
+                        </span>
+                    </td>
+                </tr>
+
+            </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ADD PROPERTY -->
+    <div id="addProperty"
+         class="dash-content">
+
+        <div class="dashboard-box">
+
+            <h2>
+                Add New Property
+            </h2>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label class="form-label">
+                        Property Name
+                    </label>
+
+                    <input id="pName"
+                           placeholder="Example: Premium Villa">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label class="form-label">
+                        Property Type
+                    </label>
+
+                    <select id="pType">
+
+                        <option value="">
+                            Select Type
+                        </option>
+
+                        <option>House</option>
+                        <option>Flat</option>
+                        <option>Plot</option>
+                        <option>Shop</option>
+                        <option>Commercial</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label class="form-label">
+                        Property Location
+                    </label>
+
+                    <input id="pLocation"
+                           placeholder="Enter complete location">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label class="form-label">
+                        Area (Sq.Ft.)
+                    </label>
+
+                    <input id="pArea"
+                           type="number"
+                           placeholder="Example: 1500">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label class="form-label">
+                        Rate Per Sq.Ft. (₹)
+                    </label>
+
+                    <input id="pRate"
+                           type="number"
+                           placeholder="Example: 2500">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label class="form-label">
+                        Total Price (₹)
+                    </label>
+
+                    <input id="pTotal"
+                           type="number"
+                           placeholder="Example: 3750000">
+
+                </div>
+
+
+                <div class="form-group full">
+
+                    <label class="form-label">
+                        Property Image URL
+                    </label>
+
+                    <input id="pImage"
+                           placeholder="Paste property image URL"
+                           oninput="previewImage('pImage','propertyPreview')">
+
+                    <div id="propertyPreview"
+                         class="image-preview">
+                        <img>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group full">
+
+                    <label class="form-label">
+                        Location Photo URL
+                    </label>
+
+                    <input id="pLocationImage"
+                           placeholder="Paste location image URL"
+                           oninput="previewImage('pLocationImage','locationPreview')">
+
+                    <div id="locationPreview"
+                         class="image-preview">
+                        <img>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group full">
+
+                    <label class="form-label">
+                        Google Maps Embed URL
+                    </label>
+
+                    <input id="pMap"
+                           placeholder="Paste Google Maps embed URL">
+
+                </div>
+
+
+                <div class="form-group full">
+
+                    <label class="form-label">
+                        Property Description
+                    </label>
+
+                    <textarea id="pDescription"
+                              placeholder="Write property details..."></textarea>
+
+                </div>
+
+            </div>
+
+
+            <button class="btn btn-primary"
+                    onclick="addProperty()">
+                Save Property
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ENQUIRIES -->
+    <div id="enquiries"
+         class="dash-content">
+
+        <div class="dashboard-box">
+
+            <h2>
+                Customer Enquiries
+            </h2>
+
+            <div class="table-wrap">
+
+            <table>
+
+                <tr>
+                    <th>Customer</th>
+                    <th>Phone</th>
+                    <th>Property</th>
+                    <th>Message</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>Rahul Kumar</td>
+                    <td>98XXXXXX12</td>
+                    <td>Luxury House</td>
+                    <td>Interested in property.</td>
+                    <td>
+                        <span class="status available">
+                            New
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Priya Singh</td>
+                    <td>96XXXXXX78</td>
+                    <td>Premium Flat</td>
+                    <td>Want to visit location.</td>
+                    <td>
+                        <span class="status sold">
+                            Contacted
+                        </span>
+                    </td>
+                </tr>
+
+            </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+</div>
+
+</div>
+
+
+<!-- TOAST -->
+<div id="toast" class="toast">
+    Done
+</div>
+
+
+<script>
+
+/* PROPERTY DATA */
+
+const properties = {
+
+1:{
+    title:"Premium Family House",
+    type:"Residential House",
+    location:"Shikohabad, Uttar Pradesh",
+    price:"₹75 Lakh",
+    rate:"₹4,166 / Sq.Ft.",
+    area:"1800 Sq.Ft.",
+    image:"https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=90",
+    locationImage:"https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1400&q=90",
+    map:"https://www.google.com/maps?q=Shikohabad,Uttar%20Pradesh&output=embed",
+    description:"A premium family house located in a convenient residential area with access to roads, markets, schools and essential facilities."
+},
+
+2:{
+    title:"Luxury Apartment",
+    type:"Apartment",
+    location:"Firozabad, Uttar Pradesh",
+    price:"₹48 Lakh",
+    rate:"₹4,000 / Sq.Ft.",
+    area:"1200 Sq.Ft.",
+    image:"https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=90",
+    locationImage:"https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1400&q=90",
+    map:"https://www.google.com/maps?q=Firozabad,Uttar%20Pradesh&output=embed",
+    description:"A modern apartment suitable for families looking for comfortable living in a well-connected area."
+},
+
+3:{
+    title:"Residential Plot",
+    type:"Residential Plot",
+    location:"Main Road, Shikohabad",
+    price:"₹25 Lakh",
+    rate:"₹1,666 / Sq.Ft.",
+    area:"1500 Sq.Ft.",
+    image:"https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=90",
+    locationImage:"https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1400&q=90",
+    map:"https://www.google.com/maps?q=Shikohabad,Uttar%20Pradesh&output=embed",
+    description:"A residential plot located near the main road, suitable for future home construction."
+},
+
+4:{
+    title:"Market Commercial Shop",
+    type:"Commercial",
+    location:"Main Market, Shikohabad",
+    price:"₹35 Lakh",
+    rate:"₹7,000 / Sq.Ft.",
+    area:"500 Sq.Ft.",
+    image:"https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&w=1400&q=90",
+    locationImage:"https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1400&q=90",
+    map:"https://www.google.com/maps?q=Shikohabad,Uttar%20Pradesh&output=embed",
+    description:"A commercial shop in a market location suitable for retail and other business activities."
+}
+
+};
+
+
+/* PAGE NAVIGATION */
+
+function showPage(page){
+
+    document.querySelectorAll(".page").forEach(function(p){
+        p.classList.remove("active");
+    });
+
+    const target=document.getElementById(page);
+
+    if(target){
+        target.classList.add("active");
+    }
+
+    document.getElementById("mainNav").classList.remove("open");
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+}
+
+
+/* MOBILE MENU */
+
+function toggleMenu(){
+
+    document
+    .getElementById("mainNav")
+    .classList.toggle("open");
+
+}
+
+
+/* SEARCH */
+
+function searchProperty(){
+
+    const type=document.getElementById("searchType").value;
+    const location=document.getElementById("searchLocation").value.trim();
+    const budget=document.getElementById("searchBudget").value;
+
+    if(!type && !location && !budget){
+
+        showToast(
+            "Please select a search option."
+        );
+
+        return;
+    }
+
+    showPage("properties");
+
+    showToast(
+        "Showing available properties."
+    );
+}
+
+
+/* PROPERTY DETAIL */
+
+function openProperty(id){
+
+    const p=properties[id];
+
+    if(!p){
+        return;
+    }
+
+    document.getElementById("detailImage").src=p.image;
+    document.getElementById("locationImage").src=p.locationImage;
+    document.getElementById("propertyMap").src=p.map;
+
+    document.getElementById("detailTitle").innerText=p.title;
+    document.getElementById("detailType").innerText=p.type;
+    document.getElementById("detailPropertyType").innerText=p.type;
+    document.getElementById("detailLocation").innerText="📍 "+p.location;
+    document.getElementById("detailPrice").innerText=p.price;
+    document.getElementById("detailRate").innerText=p.rate;
+    document.getElementById("detailArea").innerText=p.area;
+    document.getElementById("detailDescription").innerText=p.description;
+
+    showPage("detail");
+}
+
+
+/* SAVE PROPERTY */
+
+function saveProperty(button){
+
+    if(button.dataset.saved==="true"){
+
+        button.innerText="♡";
+        button.dataset.saved="false";
+
+        showToast(
+            "Removed from saved properties."
+        );
+
+    }else{
+
+        button.innerText="♥";
+        button.dataset.saved="true";
+
+        showToast(
+            "Property saved."
+        );
+
+    }
+}
+
+
+/* REGISTER */
+
+function register(){
+
+    const name=document.getElementById("regName").value.trim();
+    const email=document.getElementById("regEmail").value.trim();
+    const phone=document.getElementById("regPhone").value.trim();
+    const password=document.getElementById("regPassword").value;
+
+    if(!name || !email || !phone || !password){
+
+        showToast(
+            "Please fill all required fields."
+        );
+
+        return;
+    }
+
+    if(password.length<6){
+
+        showToast(
+            "Password must contain at least 6 characters."
+        );
+
+        return;
+    }
+
+    const user={
+        name:name,
+        email:email,
+        phone:phone
+    };
+
+    localStorage.setItem(
+        "janviUser",
+        JSON.stringify(user)
+    );
+
+    document.getElementById("loginEmail").value=email;
+
+    showToast(
+        "Account created successfully."
+    );
+
+    setTimeout(function(){
+
+        showPage("login");
+
+    },700);
+}
+
+
+/* LOGIN */
+
+function login(){
+
+    const email=document.getElementById("loginEmail").value.trim();
+    const password=document.getElementById("loginPassword").value;
+    const role=document.getElementById("loginRole").value;
+
+    if(!email || !password){
+
+        showToast(
+            "Please enter email and password."
+        );
+
+        return;
+    }
+
+    const savedUser=JSON.parse(
+        localStorage.getItem("janviUser") || "null"
+    );
+
+    if(savedUser && savedUser.email===email){
+
+        document.getElementById(
+            "dashboardUser"
+        ).innerText=savedUser.name;
+
+    }else{
+
+        document.getElementById(
+            "dashboardUser"
+        ).innerText=
+        role==="admin" ? "Admin" : "Customer";
+
+    }
+
+    localStorage.setItem(
+        "janviLoggedIn",
+        "true"
+    );
+
+    showToast(
+        "Login successful."
+    );
+
+    setTimeout(function(){
+
+        showPage("dashboard");
+
+    },600);
+}
+
+
+/* LOGOUT */
+
+function logout(){
+
+    localStorage.removeItem(
+        "janviLoggedIn"
+    );
+
+    showToast(
+        "You have been logged out."
+    );
+
+    setTimeout(function(){
+
+        showPage("home");
+
+    },600);
+}
+
+
+/* DASHBOARD */
+
+function dashboardSection(section,button){
+
+    document.querySelectorAll(
+        ".dash-content"
+    ).forEach(function(item){
+
+        item.classList.remove("active");
+
+    });
+
+    const target=document.getElementById(section);
+
+    if(target){
+        target.classList.add("active");
+    }
+
+    document.querySelectorAll(
+        ".side-btn"
+    ).forEach(function(item){
+
+        item.classList.remove("active");
+
+    });
+
+    if(button){
+        button.classList.add("active");
+    }
+}
+
+
+/* ADD PROPERTY */
+
+function addProperty(){
+
+    const name=document.getElementById("pName").value.trim();
+    const type=document.getElementById("pType").value;
+    const location=document.getElementById("pLocation").value.trim();
+    const area=document.getElementById("pArea").value;
+    const rate=document.getElementById("pRate").value;
+    const total=document.getElementById("pTotal").value;
+
+    if(!name ||
+       !type ||
+       !location ||
+       !area ||
+       !rate ||
+       !total){
+
+        showToast(
+            "Please fill all required property details."
+        );
+
+        return;
+    }
+
+    showToast(
+        "Property added successfully."
+    );
+
+    document.querySelectorAll(
+        "#addProperty input, #addProperty textarea"
+    ).forEach(function(field){
+
+        field.value="";
+
+    });
+
+    document.getElementById(
+        "pType"
+    ).selectedIndex=0;
+
+}
+
+
+/* IMAGE PREVIEW */
+
+function previewImage(inputId,previewId){
+
+    const input=document.getElementById(inputId);
+    const preview=document.getElementById(previewId);
+    const image=preview.querySelector("img");
+
+    const url=input.value.trim();
+
+    if(url){
+
+        image.src=url;
+        preview.style.display="block";
+
+    }else{
+
+        preview.style.display="none";
+
+    }
+}
+
+
+/* OPEN MAP */
+
+function openMap(){
+
+    window.open(
+        "https://www.google.com/maps/search/?api=1&query=Shikohabad,Uttar+Pradesh",
+        "_blank"
+    );
+
+}
+
+
+/* TOAST */
+
+let toastTimer;
+
+function showToast(message){
+
+    const toast=document.getElementById("toast");
+
+    toast.innerText=message;
+
+    toast.classList.add("show");
+
+    clearTimeout(toastTimer);
+
+    toastTimer=setTimeout(function(){
+
+        toast.classList.remove("show");
+
+    },2500);
+}
+
+
+/* LOAD PROPERTY CARDS */
+
+function loadProperties(){
+
+    const list=document.getElementById(
+        "propertyList"
+    );
+
+    if(!list){
+        return;
+    }
+
+    list.innerHTML="";
+
+    Object.keys(properties).forEach(function(id){
+
+        const p=properties[id];
+
+        list.innerHTML += `
+
+        <div class="property-card">
+
+            <div class="property-image">
+
+                <img src="${p.image}"
+                     alt="${p.title}">
+
+                <span class="badge property-badge">
+                    ${p.type}
+                </span>
+
+                <button
+                    class="property-save"
+                    onclick="saveProperty(this)">
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="property-body">
+
+                <div class="property-type">
+                    ${p.type}
+                </div>
+
+                <div class="property-title">
+                    ${p.title}
+                </div>
+
+                <div class="property-location">
+                    📍 ${p.location}
+                </div>
+
+                <div class="property-price">
+                    ${p.price}
+                </div>
+
+                <div class="property-rate">
+                    ${p.rate}
+                </div>
+
+                <div class="property-meta">
+                    <span>📐 ${p.area}</span>
+                    <span>📍 Location</span>
+                </div>
+
+                <button
+                    class="btn btn-primary"
+                    onclick="openProperty(${id})">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+        `;
+
+    });
+}
+
+
+/* INITIALIZE */
+
+loadProperties();
+
+const savedUser=JSON.parse(
+    localStorage.getItem("janviUser") || "null"
+);
+
+if(savedUser){
+
+    document.getElementById(
+        "dashboardUser"
+    ).innerText=savedUser.name;
+
+}
+
+</script>
+
+</body>
+</html>
+```
